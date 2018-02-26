@@ -1,0 +1,188 @@
+/*February 21, 2018
+ *CSC 151
+ *Miguel Ivan Orona
+ *This program runs everyones name and food preferences
+ *then prompt the user to input their name.
+ */
+package bugged_0001_01_oronamiguel;
+import java.util.Scanner;
+/**
+ * @author oronam7447
+ */
+//This is everyone's name list. 
+public class Bugged_0001_01_OronaMiguel {
+   public static void main(String[] args)
+// I am number 0. This is the start and the finish point.
+   {
+      System.out.println("Scooby Dooby Doo, where are you? ");
+      agbeleh2272();
+      System.out.println("Now is a good time for a Scooby snack and a break.");
+   }
+
+//I am # number 1   
+ public static void agbeleh2272()  
+{
+System.out.println("my name is Hillary Agbele ");
+baumanm5862();
+System.out.println("I am having rice for lunch today");
+}   
+
+// I am # 2. My name is Marc Bauman
+public static void baumanm5862()
+{
+System.out.println("Hello. My name is Marc Bauman.");
+freemanm9014();
+System.out.println("I'm going to have marinara pasta and garlic bread for lunch.");
+}
+// My name is Michael Freeman. My number is 5
+    public static void freemanm9014()
+    {
+    System.out.println("Hello my name is Michael Freeman");
+    hatcherb5815();
+    System.out.println("I want to go Subway");
+    }  
+
+// I am number 6  my name is Brynn Hatcher
+public static void hatcherb5815()
+    {
+ System.out.println("My name is Brynn Hatcher");
+ hyltonc4469();
+ System.out.println("For lunch I want pizza");
+}
+   
+// I am # 7.  My name is Marie Hylton
+public static void hyltonc4469()
+{
+        System.out.println("Hello, My name is Marie Hylton.");
+        jonesr4932();
+        System.out.println("I would like a turkey sandwich for lunch.");
+}
+//* I Am Number 8, My Name is Reginald Jones   
+public static void jonesr4932() 
+{   
+    System.out.println("My name is Reginald Jones");
+    mcintiret3710();
+    System.out.println("I have a sweet tooth, For lunch I'd "
+            + "like to order some Cheesecake");
+}   
+// I am number 10.  My name is Theodore McIntire
+public static void mcintiret3710()
+{
+System.out.println("Hello, my name is Theodore/Ted");
+mcneilly3281();
+System.out.println("For lunch I plan to eat fruit");
+}
+
+//My name is Yolanda McNeill and I am #11.
+ public static void mcneilly3281() 
+    {    
+    System.out.println("Hi, my name is YOlanda.");
+    olivarea9869();        
+    System.out.println("I want something grilled for lunch.");
+    }
+ //I am A Olivares I am #12.
+ public static void olivarea9869()
+ {
+     System.out.println("My name is Olivarea.");
+     oronam7447();
+     System.out.println("My favorite food is soup.");
+ }
+//I am #13. My name is Ivan Orona.
+    public static void oronam7447() 
+    {
+       System.out.println("My name is Ivan (Miguel) Orona.");
+       pallugnr0327();
+       System.out.println("For lunch I want Sushi");
+    }
+
+//My name is Richard Pallugna my number is 14.
+public static void pallugnr0327()
+  {
+   System.out.println("Hello my name is Richard Pallugna.");
+   privetts3931();
+   System.out.println("For lunch I would like a salad.");
+  }
+
+// I am # 15. My name is Stephen Privette
+public static void privetts3931()
+    {   
+    System.out.println("Oh hi there! My name is Stephen.");
+    scottc4539();
+    System.out.println("Today for lunch I will be having a basic sandwich y'all.");
+    }
+
+ // I am # 16. My name is Cameron Scott.
+    public static void scottc4539() 
+    {
+        System.out.println("My name is Scott");
+        martinem7407();
+        System.out.println("For lunch I'm having seafood pasta");
+    }    
+    
+//I am number 17
+public static void martinem7407() {
+        
+        System.out.println("My name is Mike");
+        wallacea7019();
+        System.out.println("My favorite food is Steak");
+}
+
+// Hello My Name Is Anthony and My Number Is 18
+    public static void wallacea7019() {
+        System.out.println("Hi my name is");
+        wattsj2683();
+        System.out.println("My favorite food is bang bang chicken.");
+    }
+    
+/*My name is Jesse Watts and I am awesome number 19!!!!*/
+    public static void wattsj2683()
+    {
+     System.out.println("My name is Jesse.");
+     willa0558();
+     System.out.println("For lunch I'm having ribs!!!");                  
+    }
+   
+ //My name is Aaron Williams and I am #21
+    public static void willa0558()
+    {
+        System.out.println("Hello, my name is Aaron Williams");
+        teterd1234();
+        System.out.println("I'm not really feeling that hungry to be honest");
+    }   
+   
+// I am # 22, my name is David Teter.
+   public static void teterd1234()
+   {
+      System.out.println("My name is David.");
+      zzzz();
+      System.out.println("I will be having SQL for lunch today :-)");
+   }
+
+   //This is the turn around point.///////////////////////////
+   //Now we go back to the start./////////////////////////////
+   public static void zzzz()
+   {
+        System.out.println("This is the last method call."
+              + "\n~~~~~~~ We are now half way home. ~~~~~~~");
+        bugged01();
+   }
+   
+   //This will prompt the user to input their name.
+   public static void bugged01()
+   {
+       String name1; //holds the first name
+       String name2; //holds the second name
+       //prompts the user.
+       Scanner user_input = new Scanner (System.in);
+       System.out.println("What is your name?");
+       name1 = user_input.next();
+       System.out.println("Hello, I am " + name1 + " and"
+               + "this is my program." );
+       System.out.println("Who is the second user?");
+       name2 = user_input.next();
+       //prints out the completed form.
+       System.out.println("Hell, I am " + name2 + " and I "
+               + "am checking this program "
+               + "for " + name1 + ".");
+   }
+}
