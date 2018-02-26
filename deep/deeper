@@ -1,0 +1,88 @@
+/*
+*Miguel Ivan Orona
+*February 14, 2018
+*CSC-151
+ */
+package deepanddeeper_oronamiguel;
+import java.util.Scanner;
+/**
+ *
+ * @author oronam7447
+ */
+public class DeepAndDeeper_OronaMiguel {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("I am starting in main.");
+        deep();
+        System.out.println("Now I am back in main.");
+    }
+    public static void deep()
+    {        System.out.println("I am now in deep.");
+             deeper();
+             System.out.println("Now I am back in deep.");
+    }
+    public static void deeper()
+    {
+        String food;
+        String name;
+        Scanner keyboard = new Scanner (System.in);
+        
+        System.out.println("I am now in deeper.");
+        deepest();
+        
+        System.out.println("what is your name?");
+        name = keyboard.next();
+        
+        System.out.println("what is your favorite food?");
+        food = keyboard.next();
+        
+        System.out.println("Your name is, " + name + " and your favorite food is, " + food);
+    }
+    public static void deepest()
+    {
+        Double low;
+        Double high;
+        Scanner keyboard = new Scanner (System.in);
+        
+        System.out.println("What are your two favorite numbers");
+        System.out.println("between 1 and 100?");
+        System.out.println("Please input one even number");
+        System.out.println("and one odd number with the highest");
+        System.out.println("number being first.");
+        System.out.println("what is your favorite high number?");
+        high = keyboard.nextDouble();
+        
+        System.out.println("what is your favorite low number?");
+        low = keyboard.nextDouble();
+        
+        System.out.println("Your favorite high number"
+                + " is, " + high + " and your favorite "
+                        + "low number is " + low);
+        Double addSum;
+        Double multiSum;
+        Double subtractSum;
+        Double diviSum;
+        Double percentSum;
+        
+        addSum = low + high;
+        multiSum = low * high;
+        subtractSum = high - low ;
+        diviSum = high / low;
+        percentSum = (low / high) * 100;
+        
+        System.out.println("Your numbers added together "
+                + "are, " + addSum + " and your"
+                        + " numbers subtracted are, " + subtractSum);
+        System.out.println("If you multiplied your numbers, you"
+                + " would get " + multiSum);
+        System.out.println("If you divided your highest "
+                + " number by your lowest number, then "
+                + " you would get " + diviSum);
+        System.out.println("If you divided your highest "
+                + " number by your lowest number,"
+                + " you would get " + percentSum);
+    }      
+}
